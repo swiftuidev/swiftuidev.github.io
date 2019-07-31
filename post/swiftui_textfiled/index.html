@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Tags &middot; </title>
-  <meta name="description" content="" />
+  <title>SwiftUI-TextField &middot; </title>
+  <meta name="description" content="TextField 用来添加普通的输入框，一般常用作文本输入" />
   <link rel="shortcut icon" href="https://swiftuidev.github.io/themes/aether/static/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="https://swiftuidev.github.io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://swiftuidev.github.io/favicon-32x32.png">
@@ -17,7 +17,6 @@
   
   
   <link href="https://swiftuidev.github.io/css/concated.min.css" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" href="https://swiftuidev.github.io/tags/index.xml" title="" />
   
   <style>
     body {
@@ -26,7 +25,7 @@
   </style>
 </head>
 
-  <body class="list-body">
+  <body class="single-body">
     <nav class="nav-bar side-padding">
   <h1 class="nav-header"><a href="https://swiftuidev.github.io/" class="nav-text">SwiftUI-Dev</a></h1>
   <div class="hamburger-menu">
@@ -43,26 +42,82 @@
   </div>
 </nav>
 
-    <main class="card-container side-gutter">
-      <header class="list-header">
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+        	<h1 class="post-title">SwiftUI-TextField</h1>
+          <p class="post-date">Posted <time datetime="2019-07-31">Jul 31, 2019</time></p>
+        </header>
         
-        <h1 class="list-header-title">Tags</h1>
-      </header>
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://swiftuidev.github.io/post/swiftui_textfiled/20190731-115546_hu2f93425120d149a80cc3ed7da09a2c1d_20636_800x0_resize_lanczos_2.png">
+          <img src="https://swiftuidev.github.io/post/swiftui_textfiled/20190731-115546_hu2f93425120d149a80cc3ed7da09a2c1d_20636_800x0_resize_lanczos_2.png" >
+        </picture>
+        
+        <p><code>TextField</code>用来添加普通的输入框，一般常用作文本输入。</p>
+
+<pre><code>
+import SwiftUI
+import PlaygroundSupport
+
+struct TextFieldPage: View {
+    
+    @State var name = &quot;&quot;
+    @State var pass = &quot;&quot;
+    
+    var body: some View {
+        VStack {
+            TextField(self.$name, placeholder: Text(&quot;Name&quot;), onEditingChanged: { (changed) in
+                print(changed)
+            }) {
+                print(self.name)
+            }
+            .textFieldStyle(.roundedBorder)
+                .frame(width: 200)
+            SecureField(self.$pass, placeholder: Text(&quot;Pass&quot;)) {
+                print(self.pass)
+            }.textFieldStyle(.roundedBorder)
+                .frame(width: 200)
+            
+        }
+    }
+}
+
+PlaygroundPage.current.liveView = UIHostingController(rootView: TextFieldPage())
+
+</code></pre>
+
+      </article>
+      
+    </main>
+    <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://swiftuidev.github.io/tags/text/" class="card blog-card" rel="bookmark" >
+  href="https://swiftuidev.github.io/post/swiftui_text/" class="card blog-card" rel="bookmark" >
+  
+  <div class="card-img-container">
+    <p class="card-img-overlay">下一篇</p>
+    <picture>
+      
+      <source srcset="https://swiftuidev.github.io/post/swiftui_text/20190731-111438.png">
+      <img src="https://swiftuidev.github.io/post/swiftui_text/20190731-111438.png" class="card-img" >
+    </picture>
+  </div>
   
   <article class="card-body">
-    <h2 class="card-title">Text</h2>
-    <p class="card-text"></p>
+    <h2 class="card-title">SwiftUI-Text</h2>
+    <p class="card-text">Text 用来展示一行或多行的文本内容，效果等同于 UILabel，可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2019-07-31">Jul 31, 2019</time></p>
-      
+      <p>Posted <time datetime="2019-07-31 731:00">Jul 31, 2019</time></p>
+      <p>#SwiftUI </p>
     </div>
   </article>
 </a>
-    </main>
-    
+      
+      
+    </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js"
   integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>

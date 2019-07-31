@@ -5,11 +5,25 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-en</language>
-    <lastBuildDate>Tue, 30 Jul 2019 14:54:38 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2019 11:55:59 +0800</lastBuildDate>
     
         <atom:link href="https://swiftuidev.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>SwiftUI-TextField</title>
+      <link>https://swiftuidev.github.io/post/swiftui_textfiled/</link>
+      <pubDate>Wed, 31 Jul 2019 11:55:59 +0800</pubDate>
+      
+      <guid>https://swiftuidev.github.io/post/swiftui_textfiled/</guid>
+      <description>TextField 用来添加普通的输入框，一般常用作文本输入</description>
+    </item><item>
+      <title>SwiftUI-Text</title>
+      <link>https://swiftuidev.github.io/post/swiftui_text/</link>
+      <pubDate>Wed, 31 Jul 2019 11:13:28 +0800</pubDate>
+      
+      <guid>https://swiftuidev.github.io/post/swiftui_text/</guid>
+      <description>Text 用来展示一行或多行的文本内容，效果等同于 UILabel，可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等</description>
+    </item><item>
       <title>不安装macOS10.15的情况下,使用xcode预览SwiftUI</title>
       <link>https://swiftuidev.github.io/post/no15-swiftui-xcode/</link>
       <pubDate>Tue, 30 Jul 2019 14:54:38 +0800</pubDate>

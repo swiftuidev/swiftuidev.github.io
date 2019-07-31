@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text - </title>
+    <link>https://swiftuidev.github.io/tags/text/</link>
+    <description>Recent content in Text on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-en</language>
+    <lastBuildDate>Wed, 31 Jul 2019 11:13:28 +0800</lastBuildDate>
+    
+        <atom:link href="https://swiftuidev.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SwiftUI-Text</title>
+      <link>https://swiftuidev.github.io/post/swiftui_text/</link>
+      <pubDate>Wed, 31 Jul 2019 11:13:28 +0800</pubDate>
+      
+      <guid>https://swiftuidev.github.io/post/swiftui_text/</guid>
+      <description>Text 用来展示一行或多行的文本内容，效果等同于 UILabel，可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等</description>
+    </item>
+  </channel>
+</rss>
