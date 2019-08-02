@@ -3,54 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://swiftuidev.github.io/about/</loc>
-    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swiftuidev.github.io/</loc>
-    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+    <loc>https://swiftuidev.github.io/categories/</loc>
+    <lastmod>2019-08-02T11:05:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://swiftuidev.github.io/categories/</loc>
-    <lastmod>2019-07-31T11:55:59+08:00</lastmod>
+    <loc>https://swiftuidev.github.io/tags/design-code/</loc>
+    <lastmod>2019-08-02T11:05:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://swiftuidev.github.io/post/</loc>
-    <lastmod>2019-07-31T11:55:59+08:00</lastmod>
+    <lastmod>2019-08-02T11:05:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://swiftuidev.github.io/tags/swift/</loc>
+    <lastmod>2019-08-02T11:05:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://swiftuidev.github.io/categories/swiftui/</loc>
-    <lastmod>2019-07-31T11:55:59+08:00</lastmod>
+    <lastmod>2019-08-02T11:05:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://swiftuidev.github.io/post/swiftui_textfiled/</loc>
-    <lastmod>2019-07-31T11:55:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swiftuidev.github.io/post/swiftui_text/</loc>
-    <lastmod>2019-07-31T11:13:28+08:00</lastmod>
+    <loc>https://swiftuidev.github.io/post/swiftui_layout_stacks/</loc>
+    <lastmod>2019-08-02T11:05:44+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://swiftuidev.github.io/tags/</loc>
-    <lastmod>2019-07-31T11:13:28+08:00</lastmod>
+    <lastmod>2019-08-02T11:05:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://swiftuidev.github.io/tags/text/</loc>
-    <lastmod>2019-07-31T11:13:28+08:00</lastmod>
+    <loc>https://swiftuidev.github.io/</loc>
+    <lastmod>2019-08-02T11:05:44+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://swiftuidev.github.io/post/swiftui_create_ios_app/</loc>
+    <lastmod>2019-08-02T10:30:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swiftuidev.github.io/about/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>

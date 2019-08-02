@@ -4,21 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>404 Page not found - 全国十大杰出不出名人物</title>
+	<title>Design Code - 全国十大杰出不出名人物</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="404 Page not found" />
+	<meta property="og:title" content="Design Code" />
 <meta property="og:description" content="你们每人给我一块钱,我就可以成为首富 --鲁迅" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://swiftuidev.github.io/404.html" />
+<meta property="og:url" content="https://swiftuidev.github.io/tags/design-code/" />
 
+<meta property="og:updated_time" content="2019-08-02T11:05:44&#43;08:00"/>
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
+<meta name="twitter:title" content="Design Code"/>
 <meta name="twitter:description" content="你们每人给我一块钱,我就可以成为首富 --鲁迅"/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="alternate" type="application/rss+xml" href="/tags/design-code/index.xml" title="全国十大杰出不出名人物">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/custom.css">
@@ -55,12 +57,64 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main" role="main">
-	<div class="warning">
-		<h1 class="warning__headline">404. Page not found</h1>
-		<p class="warning__text">The page you were looking for appears to have been moved, deleted or does not exist. Please, use search or go to <a href="/">main page</a>.</p>
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">Design Code</h1>
+	</header><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/swiftui_layout_stacks/" rel="bookmark">
+			SwiftUI进击的巨人2-Layout和Stacks
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-02T11:05:44">August 02, 2019</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/swiftui" rel="category">SwiftUI</a></span>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		我们这里添加一个logo图片,logo和Text是横向并列的,这里我们就需要使用到HStack,跟VStack一样,这个是垂直排布的.
+将文本都向左对齐,这里使用VStack的alignment参数来进行操作.
+Image默认是不可以修改大小的,需要调用resizable()才可以进行大小的修改.
+调整Crad Spacer是一个占位控件,默认是会占据所有的位置
+struct ContentView: View { var body: some View { VStack { HStack { VStack(alignment: .leading) { Text(&quot;SwiftUI-Dev&quot;) .bold() .foregroundColor(Color(&quot;accent&quot;)) .font(.title) .padding(.top) Text(&quot;Attach&quot;) .foregroundColor(.white) } Spacer() Image(&quot;Logo&quot;) .resizable() .frame(width: 30.0, height: 30.0) } Image(&quot;Background&quot;) } .background(Color.black) .cornerRadius(10) } }  可以看到这里的Card被占位控件影响,宽度铺满了屏幕,我们可以通过修改宽高来固定Card的大小,同样我们再给Card添加左右的内边距,使得文本和logo有一定的距离.
+struct ContentView: View { var body: some View { VStack { HStack { VStack(alignment: .leading) { Text(&quot;SwiftUI-Dev&quot;) .bold() .foregroundColor(Color(&quot;accent&quot;)) .font(.headline) .padding(.top) Text(&quot;Attach&quot;) .foregroundColor(.white) } Spacer() Image(&quot;Logo&quot;) .
 	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/post/swiftui_layout_stacks/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/swiftui_create_ios_app/" rel="bookmark">
+			SwiftUI进击的巨人1-创建SwiftUI项目
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-02T10:30:43">August 02, 2019</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/swiftui" rel="category">SwiftUI</a></span>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		 要创建一个SwiftUI的应用,步骤和普通的应用创建流程一样,唯一的不同点在于需要选择Use SwiftUI这个选项.如下图一样. 然后你会看到这个界面,如果出现界面,你可以点击resume按钮刷新一下,就是右上角红色圈住的. 制作一个卡片布局 Text Text是SwiftUI提供的文字控件,我们这里修改文字,并设置颜色,粗体.字体样式. VStack 我们在添加一个Text,这里会使用VStack,这是SwiftUI提供的垂直布局容器,VStack里面的控件按照从上到下的顺序进行排序. 添加一个Image Image就是一个图片控件. 在添加一个背景颜色,边框圆角,这个Card就完成了. 
+	</div>
+</article>
 </main>
+
 
 			</div>
 			

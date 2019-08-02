@@ -6,10 +6,33 @@
     <description>Recent content on 全国十大杰出不出名人物</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2019 11:05:44 +0800</lastBuildDate>
     
 	<atom:link href="https://swiftuidev.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SwiftUI进击的巨人2-Layout和Stacks</title>
+      <link>https://swiftuidev.github.io/post/swiftui_layout_stacks/</link>
+      <pubDate>Fri, 02 Aug 2019 11:05:44 +0800</pubDate>
+      
+      <guid>https://swiftuidev.github.io/post/swiftui_layout_stacks/</guid>
+      <description>我们这里添加一个logo图片,logo和Text是横向并列的,这里我们就需要使用到HStack,跟VStack一样,这个是垂直排布的.
+将文本都向左对齐,这里使用VStack的alignment参数来进行操作.
+Image默认是不可以修改大小的,需要调用resizable()才可以进行大小的修改.
+调整Crad Spacer是一个占位控件,默认是会占据所有的位置
+struct ContentView: View { var body: some View { VStack { HStack { VStack(alignment: .leading) { Text(&amp;quot;SwiftUI-Dev&amp;quot;) .bold() .foregroundColor(Color(&amp;quot;accent&amp;quot;)) .font(.title) .padding(.top) Text(&amp;quot;Attach&amp;quot;) .foregroundColor(.white) } Spacer() Image(&amp;quot;Logo&amp;quot;) .resizable() .frame(width: 30.0, height: 30.0) } Image(&amp;quot;Background&amp;quot;) } .background(Color.black) .cornerRadius(10) } }  可以看到这里的Card被占位控件影响,宽度铺满了屏幕,我们可以通过修改宽高来固定Card的大小,同样我们再给Card添加左右的内边距,使得文本和logo有一定的距离.
+struct ContentView: View { var body: some View { VStack { HStack { VStack(alignment: .leading) { Text(&amp;quot;SwiftUI-Dev&amp;quot;) .bold() .foregroundColor(Color(&amp;quot;accent&amp;quot;)) .font(.headline) .padding(.top) Text(&amp;quot;Attach&amp;quot;) .foregroundColor(.white) } Spacer() Image(&amp;quot;Logo&amp;quot;) .</description>
+    </item>
+    
+    <item>
+      <title>SwiftUI进击的巨人1-创建SwiftUI项目</title>
+      <link>https://swiftuidev.github.io/post/swiftui_create_ios_app/</link>
+      <pubDate>Fri, 02 Aug 2019 10:30:43 +0800</pubDate>
+      
+      <guid>https://swiftuidev.github.io/post/swiftui_create_ios_app/</guid>
+      <description> 要创建一个SwiftUI的应用,步骤和普通的应用创建流程一样,唯一的不同点在于需要选择Use SwiftUI这个选项.如下图一样. 然后你会看到这个界面,如果出现界面,你可以点击resume按钮刷新一下,就是右上角红色圈住的. 制作一个卡片布局 Text Text是SwiftUI提供的文字控件,我们这里修改文字,并设置颜色,粗体.字体样式. VStack 我们在添加一个Text,这里会使用VStack,这是SwiftUI提供的垂直布局容器,VStack里面的控件按照从上到下的顺序进行排序. 添加一个Image Image就是一个图片控件. 在添加一个背景颜色,边框圆角,这个Card就完成了. </description>
+    </item>
     
     <item>
       <title>About</title>
@@ -18,26 +41,6 @@
       
       <guid>https://swiftuidev.github.io/about/</guid>
       <description>Thanks for reading!</description>
-    </item>
-    
-    <item>
-      <title>SwiftUI-TextField</title>
-      <link>https://swiftuidev.github.io/post/swiftui_textfiled/</link>
-      <pubDate>Wed, 31 Jul 2019 11:55:59 +0800</pubDate>
-      
-      <guid>https://swiftuidev.github.io/post/swiftui_textfiled/</guid>
-      <description>TextField用来添加普通的输入框，一般常用作文本输入。
- import SwiftUI import PlaygroundSupport struct TextFieldPage: View { @State var name = &amp;quot;&amp;quot; @State var pass = &amp;quot;&amp;quot; var body: some View { VStack { TextField(self.$name, placeholder: Text(&amp;quot;Name&amp;quot;), onEditingChanged: { (changed) in print(changed) }) { print(self.name) } .textFieldStyle(.roundedBorder) .frame(width: 200) SecureField(self.$pass, placeholder: Text(&amp;quot;Pass&amp;quot;)) { print(self.pass) }.textFieldStyle(.roundedBorder) .frame(width: 200) } } } PlaygroundPage.current.liveView = UIHostingController(rootView: TextFieldPage())  </description>
-    </item>
-    
-    <item>
-      <title>SwiftUI-Text</title>
-      <link>https://swiftuidev.github.io/post/swiftui_text/</link>
-      <pubDate>Wed, 31 Jul 2019 11:13:28 +0800</pubDate>
-      
-      <guid>https://swiftuidev.github.io/post/swiftui_text/</guid>
-      <description>Text用来展示一行或多行的文本内容，效果等同于UILabel，但更加优秀. 如果要创建Text， 只需通过Text(&amp;quot;Text&amp;quot;)即可创建. 也可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等。
-import SwiftUI import PlaygroundSupport struct TextPage: View { var body: some View { VStack { Text(&amp;quot;普通的Text&amp;quot;) Text(&amp;quot;有文字颜色的Text&amp;quot;).foregroundColor(.blue) Text(&amp;quot;加粗的Text&amp;quot;).bold() Text(&amp;quot;斜体的Text&amp;quot;).italic() Text(&amp;quot;阴影的Text&amp;quot;).shadow(color: .red, radius: 10, x: 0, y: 2) Text(&amp;quot;Text&amp;quot;).fontWeight(.medium) Text(&amp;quot;Text&amp;quot;).font(.system(.largeTitle)) Text(&amp;quot;https://swiftuidev.com&amp;quot;).underline().tapAction { print(&amp;quot;https://swiftuidev.com&amp;quot;) } Text(&amp;quot;https://swiftuidev.com&amp;quot;).strikethrough() Text(&amp;quot;Text 用来展示一行或多行的文本内容，效果等同于 UILabel，但更加优秀。 如果要创建 Text， 只需通过 Text(\&amp;quot;Text\&amp;quot;) 即可创建； 采用链式语法，也可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等。&amp;quot;).lineLimit(nil) } } } PlaygroundPage.current.liveView = UIHostingController(rootView: TextPage())  </description>
     </item>
     
     <item>

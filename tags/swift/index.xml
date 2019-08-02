@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 全国十大杰出不出名人物</title>
-    <link>https://swiftuidev.github.io/post/</link>
-    <description>Recent content in Posts on 全国十大杰出不出名人物</description>
+    <title>Swift on 全国十大杰出不出名人物</title>
+    <link>https://swiftuidev.github.io/tags/swift/</link>
+    <description>Recent content in Swift on 全国十大杰出不出名人物</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Aug 2019 11:05:44 +0800</lastBuildDate>
     
-	<atom:link href="https://swiftuidev.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://swiftuidev.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -32,18 +32,6 @@ struct ContentView: View { var body: some View { VStack { HStack { VStack(alignm
       
       <guid>https://swiftuidev.github.io/post/swiftui_create_ios_app/</guid>
       <description> 要创建一个SwiftUI的应用,步骤和普通的应用创建流程一样,唯一的不同点在于需要选择Use SwiftUI这个选项.如下图一样. 然后你会看到这个界面,如果出现界面,你可以点击resume按钮刷新一下,就是右上角红色圈住的. 制作一个卡片布局 Text Text是SwiftUI提供的文字控件,我们这里修改文字,并设置颜色,粗体.字体样式. VStack 我们在添加一个Text,这里会使用VStack,这是SwiftUI提供的垂直布局容器,VStack里面的控件按照从上到下的顺序进行排序. 添加一个Image Image就是一个图片控件. 在添加一个背景颜色,边框圆角,这个Card就完成了. </description>
-    </item>
-    
-    <item>
-      <title>不安装macOS10.15的情况下,使用xcode预览SwiftUI</title>
-      <link>https://swiftuidev.github.io/post/no15-swiftui-xcode/</link>
-      <pubDate>Tue, 30 Jul 2019 14:54:38 +0800</pubDate>
-      
-      <guid>https://swiftuidev.github.io/post/no15-swiftui-xcode/</guid>
-      <description>由于不想测试新系统的诸多Bug,就没有更新到最新的系统,但是又想玩SwiftUI,所以找到了这么一个办法.
-首先下载xcode11 Bete版
-打开xcode新建一个playground文件,按照SwiftUI的写法写个Text,然后写入最关键代码:
-import SwiftUI import PlaygroundSupport struct TextP: View { var body: some View { Text(&amp;quot;SwiftUI&amp;quot;) } } // 就是这行代码 PlaygroundPage.current.liveView = UIHostingController(rootView: TextP())  </description>
     </item>
     
   </channel>

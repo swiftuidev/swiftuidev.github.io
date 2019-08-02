@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SwiftUI进击的巨人2-Layout和Stacks - 全国十大杰出不出名人物</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Design Code">
+	<meta property="og:title" content="SwiftUI进击的巨人2-Layout和Stacks" />
+<meta property="og:description" content="Design Code" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swiftuidev.github.io/post/swiftui_layout_stacks/" />
+<meta property="article:published_time" content="2019-08-02T11:05:44&#43;08:00"/>
+<meta property="article:modified_time" content="2019-08-02T11:05:44&#43;08:00"/>
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SwiftUI进击的巨人2-Layout和Stacks"/>
+<meta name="twitter:description" content="Design Code"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="全国十大杰出不出名人物" rel="home">
+				<div class="logo__title">全国十大杰出不出名人物</div>
+				<div class="logo__tagline">你们每人给我一块钱,我就可以成为首富 --鲁迅</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">About</a>
+		</li>
+		<li class="menu__item menu__item--active">
+			<a class="menu__link" href="/post/swiftui_layout_stacks/">SwiftUI进击的巨人2-Layout和Stacks</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">SwiftUI进击的巨人2-Layout和Stacks</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-02T11:05:44">August 02, 2019</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/swiftui" rel="category">SwiftUI</a></span>
+</div>
+</div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#调整crad">调整Crad</a></li>
+<li><a href="#zstack">ZStack</a></li>
+</ul></li>
+</ul>
+</nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			
+
+<p>我们这里添加一个logo图片,logo和<code>Text</code>是横向并列的,这里我们就需要使用到<code>HStack</code>,跟<code>VStack</code>一样,这个是垂直排布的.</p>
+
+<p>将文本都向左对齐,这里使用<code>VStack</code>的<code>alignment</code>参数来进行操作.</p>
+
+<p><code>Image</code>默认是不可以修改大小的,需要调用<code>resizable()</code>才可以进行大小的修改.</p>
+
+<h2 id="调整crad">调整Crad</h2>
+
+<p><code>Spacer</code>是一个占位控件,默认是会占据所有的位置</p>
+
+<pre><code class="language-swift">struct ContentView: View {
+    var body: some View {
+        VStack {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text(&quot;SwiftUI-Dev&quot;)
+                        .bold()
+                        .foregroundColor(Color(&quot;accent&quot;))
+                        .font(.title)
+                        .padding(.top)
+                    Text(&quot;Attach&quot;)
+                        .foregroundColor(.white)
+                }
+                Spacer()
+                Image(&quot;Logo&quot;)
+                    .resizable()
+                    .frame(width: 30.0, height: 30.0)
+            }
+            Image(&quot;Background&quot;)
+        }
+        .background(Color.black)
+        .cornerRadius(10)
+    }
+}
+</code></pre>
+
+<p><img src="截屏2019-08-02上午11.20.00.png" alt="" /></p>
+
+<p>可以看到这里的Card被占位控件影响,宽度铺满了屏幕,我们可以通过修改宽高来固定Card的大小,同样我们再给Card添加左右的内边距,使得文本和logo有一定的距离.</p>
+
+<pre><code class="language-swift">struct ContentView: View {
+    var body: some View {
+        VStack {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text(&quot;SwiftUI-Dev&quot;)
+                        .bold()
+                        .foregroundColor(Color(&quot;accent&quot;))
+                        .font(.headline)
+                        .padding(.top)
+                    Text(&quot;Attach&quot;)
+                        .foregroundColor(.white)
+                }
+                Spacer()
+                Image(&quot;Logo&quot;)
+                    .resizable()
+                    .frame(width: 30.0, height: 30.0)
+            }
+            .padding(.horizontal)
+            Spacer()
+            Image(&quot;Background&quot;)
+        }
+        .background(Color.black)
+        .cornerRadius(10)
+        .frame(width: 340, height: 220)
+        .shadow(radius: 20)
+    }
+}
+</code></pre>
+
+<p><img src="截屏2019-08-02上午11.21.49.png" alt="" /></p>
+
+<h2 id="zstack">ZStack</h2>
+
+<p><code>ZStack</code>是Z轴上进行控件放置的容器.</p>
+
+<p>这里我们再添加一个蓝色的Card,并设置偏移量<code>offset</code>,使得可以看到这个蓝色的Card.</p>
+
+<pre><code class="language-swift">struct ContentView: View {
+    var body: some View {
+        ZStack {
+            VStack {
+                Text(&quot;Blue Card&quot;)
+            }
+            .frame(width: 300, height: 220)
+            .background(Color.blue)
+            .cornerRadius(10)
+            .shadow(radius: 20)
+            .offset(x: 0, y: -20)
+            
+            VStack {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text(&quot;SwiftUI-Dev&quot;)
+                            .bold()
+                            .foregroundColor(Color(&quot;accent&quot;))
+                            .font(.headline)
+                            .padding(.top)
+                        Text(&quot;Attach&quot;)
+                            .foregroundColor(.white)
+                    }
+                    Spacer()
+                    Image(&quot;Logo&quot;)
+                        .resizable()
+                        .frame(width: 30.0, height: 30.0)
+                }
+                .padding(.horizontal)
+                Spacer()
+                Image(&quot;Background&quot;)
+            }
+            .background(Color.black)
+            .cornerRadius(10)
+            .frame(width: 340, height: 220)
+            .shadow(radius: 20)
+        }
+    }
+}
+</code></pre>
+
+<p><img src="截屏2019-08-02上午11.52.27.png" alt="" /></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/swift/" rel="tag">Swift</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/design-code/" rel="tag">Design Code</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/swiftui_create_ios_app/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">SwiftUI进击的巨人1-创建SwiftUI项目</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2019 Copyright@李伟.
+			
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
