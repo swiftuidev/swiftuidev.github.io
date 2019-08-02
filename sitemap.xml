@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://swiftuidev.github.io/about/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://swiftuidev.github.io/</loc>
-    <lastmod>2019-07-31T11:55:59+08:00</lastmod>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -51,17 +56,6 @@
   <url>
     <loc>https://swiftuidev.github.io/post/no15-swiftui-xcode/</loc>
     <lastmod>2019-07-30T14:54:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swiftuidev.github.io/about/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://swiftuidev.github.io/about/about/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

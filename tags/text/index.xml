@@ -1,13 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Text - </title>
+    <title>Text on 全国十大杰出不出名人物</title>
     <link>https://swiftuidev.github.io/tags/text/</link>
-    <description>Recent content in Text on </description>
+    <description>Recent content in Text on 全国十大杰出不出名人物</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-en</language>
+    <language>en-us</language>
     <lastBuildDate>Wed, 31 Jul 2019 11:13:28 +0800</lastBuildDate>
     
-        <atom:link href="https://swiftuidev.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://swiftuidev.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>SwiftUI-Text</title>
@@ -15,7 +17,9 @@
       <pubDate>Wed, 31 Jul 2019 11:13:28 +0800</pubDate>
       
       <guid>https://swiftuidev.github.io/post/swiftui_text/</guid>
-      <description>Text 用来展示一行或多行的文本内容，效果等同于 UILabel，可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等</description>
+      <description>Text用来展示一行或多行的文本内容，效果等同于UILabel，但更加优秀. 如果要创建Text， 只需通过Text(&amp;quot;Text&amp;quot;)即可创建. 也可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等。
+import SwiftUI import PlaygroundSupport struct TextPage: View { var body: some View { VStack { Text(&amp;quot;普通的Text&amp;quot;) Text(&amp;quot;有文字颜色的Text&amp;quot;).foregroundColor(.blue) Text(&amp;quot;加粗的Text&amp;quot;).bold() Text(&amp;quot;斜体的Text&amp;quot;).italic() Text(&amp;quot;阴影的Text&amp;quot;).shadow(color: .red, radius: 10, x: 0, y: 2) Text(&amp;quot;Text&amp;quot;).fontWeight(.medium) Text(&amp;quot;Text&amp;quot;).font(.system(.largeTitle)) Text(&amp;quot;https://swiftuidev.com&amp;quot;).underline().tapAction { print(&amp;quot;https://swiftuidev.com&amp;quot;) } Text(&amp;quot;https://swiftuidev.com&amp;quot;).strikethrough() Text(&amp;quot;Text 用来展示一行或多行的文本内容，效果等同于 UILabel，但更加优秀。 如果要创建 Text， 只需通过 Text(\&amp;quot;Text\&amp;quot;) 即可创建； 采用链式语法，也可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等。&amp;quot;).lineLimit(nil) } } } PlaygroundPage.current.liveView = UIHostingController(rootView: TextPage())  </description>
     </item>
+    
   </channel>
 </rss>

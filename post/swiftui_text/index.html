@@ -1,62 +1,83 @@
 <!DOCTYPE html>
-<html lang="zh-en" dir="ltr">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>SwiftUI-Text &middot; </title>
-  <meta name="description" content="Text 用来展示一行或多行的文本内容，效果等同于 UILabel，可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等" />
-  <link rel="shortcut icon" href="https://swiftuidev.github.io/themes/aether/static/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://swiftuidev.github.io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://swiftuidev.github.io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://swiftuidev.github.io/favicon-16x16.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
-  
-  
-  
-  
-  <link href="https://swiftuidev.github.io/css/concated.min.css" rel="stylesheet">
-  
-  <style>
-    body {
-      background: #ecedef url("https://api.neweb.top/bing.php?type=rand") repeat;
-    }
-  </style>
-</head>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SwiftUI-Text - 全国十大杰出不出名人物</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Text 用来展示一行或多行的文本内容，效果等同于 UILabel，可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等">
+	<meta property="og:title" content="SwiftUI-Text" />
+<meta property="og:description" content="Text 用来展示一行或多行的文本内容，效果等同于 UILabel，可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swiftuidev.github.io/post/swiftui_text/" />
+<meta property="article:published_time" content="2019-07-31T11:13:28&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-31T11:13:28&#43;08:00"/>
 
-  <body class="single-body">
-    <nav class="nav-bar side-padding">
-  <h1 class="nav-header"><a href="https://swiftuidev.github.io/" class="nav-text">SwiftUI-Dev</a></h1>
-  <div class="hamburger-menu">
-    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
-      <span></span>
-      <span></span>
-    </button>
-    <ul id="menu" class="hamburger-menu-overlay">
-      <li><a href="https://swiftuidev.github.io/" class="hamburger-menu-overlay-link" style="font-size: 24px; color: #ec6241">主页</a></li>
-      <li><a href="https://swiftuidev.github.io/about/about/" class="hamburger-menu-overlay-link" style="font-size: 24px; color: #ec6241">关于</a></li>
-      <li><a href="https://swiftuidev.github.io/categories/swiftui" class="hamburger-menu-overlay-link" style="font-size: 24px; color: #1296db">Swiftui</a></li>
-      <li><a href="https://swiftuidev.github.io/index.xml" class="hamburger-menu-overlay-link" style="font-size: 24px">rss</a></li>
-    </ul>
-  </div>
+	<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://swiftuidev.github.io/post/swiftui_text/20190731-111438.png"/>
+<meta name="twitter:title" content="SwiftUI-Text"/>
+<meta name="twitter:description" content="Text 用来展示一行或多行的文本内容，效果等同于 UILabel，可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="全国十大杰出不出名人物" rel="home">
+				<div class="logo__title">全国十大杰出不出名人物</div>
+				<div class="logo__tagline">天青色等烟雨,而你在淋雨</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">About</a>
+		</li>
+	</ul>
 </nav>
 
-    <main class="content side-text-padding">
-      <article class="post dropcase">
-        <header class="post-header">
-        	<h1 class="post-title">SwiftUI-Text</h1>
-          <p class="post-date">Posted <time datetime="2019-07-31">Jul 31, 2019</time></p>
-        </header>
-        
-        <picture class="post-figure">
-          
-          
-          <source srcset="https://swiftuidev.github.io/post/swiftui_text/20190731-111438_hu0b5cd18d7e2b44be9c35db1d4615f5c3_367188_800x0_resize_lanczos_2.png">
-          <img src="https://swiftuidev.github.io/post/swiftui_text/20190731-111438_hu0b5cd18d7e2b44be9c35db1d4615f5c3_367188_800x0_resize_lanczos_2.png" >
-        </picture>
-        
-        <p><code>Text</code>用来展示一行或多行的文本内容，效果等同于<code>UILabel</code>，但更加优秀.
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">SwiftUI-Text</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-07-31T11:13:28">July 31, 2019</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/swiftui" rel="category">SwiftUI</a></span>
+</div>
+</div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p><code>Text</code>用来展示一行或多行的文本内容，效果等同于<code>UILabel</code>，但更加优秀.
 如果要创建<code>Text</code>， 只需通过<code>Text(&quot;Text&quot;)</code>即可创建.
 也可以为文本添加多项属性，如字体、颜色、阴影、上左下右的间距等。</p>
 
@@ -85,46 +106,53 @@ struct TextPage: View {
 PlaygroundPage.current.liveView = UIHostingController(rootView: TextPage())
 </code></pre>
 
-      </article>
-      
-    </main>
-    <nav class="end-nav side-padding">
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://swiftuidev.github.io/post/no15-swiftui-xcode/" class="card blog-card" rel="bookmark" >
-  
-  <div class="card-img-container">
-    <p class="card-img-overlay">下一篇</p>
-    <picture>
-      
-      <source srcset="https://swiftuidev.github.io/post/no15-swiftui-xcode/20190730-154131.png">
-      <img src="https://swiftuidev.github.io/post/no15-swiftui-xcode/20190730-154131.png" class="card-img" >
-    </picture>
-  </div>
-  
-  <article class="card-body">
-    <h2 class="card-title">不安装macOS10.15的情况下,使用xcode预览SwiftUI</h2>
-    <p class="card-text">由于不想测试新系统的诸多Bug,就没有更新到最新的系统,但是又想玩SwiftUI,所以找到了这么一个办法.</p>
-    <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2019-07-30 730:00">Jul 30, 2019</time></p>
-      <p>#SwiftUI </p>
-    </div>
-  </article>
-</a>
-      
-      
-    </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js"
-  integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js"
-  integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"></script>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/text/" rel="tag">Text</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
 
-<script src="https://swiftuidev.github.io/js/core.min.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="全国十大杰出不出名人物 avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About 全国十大杰出不出名人物</span>
+	</div>
+	<div class="authorbox__description">
+		你们每人给我一块钱,我就可以成为首富 --鲁迅
+	</div>
+</div>
 
-  </body>
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/no15-swiftui-xcode/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">不安装macOS10.15的情况下,使用xcode预览SwiftUI</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/swiftui_textfiled/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">SwiftUI-TextField</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2019 Copyright@李伟.
+			
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script></body>
 </html>
